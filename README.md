@@ -2,6 +2,8 @@
 
 *More details coming soon...*
 
+I've brought vibe coding to the Microsoft QBasic v1.1 IDE with LLM code completions.
+
 ## How It Works
 
 ## Media
