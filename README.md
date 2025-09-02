@@ -1,1 +1,1 @@
-# vibe_qbasic
+# QBasic Vibe Coding
