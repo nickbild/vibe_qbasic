@@ -10,7 +10,7 @@ I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the
 
 When `Vibe it!` is triggered, it saves the active BAS file and then creates a flow control file. Then it pauses until that flow control file is deleted by a separate process that I will describe shortly. When resuming after the pause, the file is reloaded and the active window is refreshed.
 
-A [Python script](https://github.com/nickbild/vibe_qbasic/blob/main/vibe.py) runs on a modern computer. It continually polls for the presence of the flow control file by accessing an FTP server that is running on the Windows 98 machine. Once the file appears, it moves on to download the source code file (also via FTP). Then the source code is turned into a prompt for a Gemini Flash 2.5 LLM. The response is written to a BAS file, which is then uploaded to the Windows 98 machine. After that, the flow control file is deleted and the IDE can take back over, reloading the source code with the updates.
+A [Python script](https://github.com/nickbild/vibe_qbasic/blob/main/vibe.py) runs on a modern computer. It continually polls for the presence of the flow control file by accessing an FTP server that is running on the Windows 98 machine. Once the file appears, it moves on to download the source code file (also via FTP). Then the source code is turned into a prompt for a Gemini Flash 2.5 LLM, which is accessed via the official API. The response is written to a BAS file, which is then uploaded to the Windows 98 machine. After that, the flow control file is deleted and the IDE can take back over, reloading the source code with the updates.
 
 Despite the complexity, it is pretty quick. Responses are generally returned in about 2 seconds.
 
