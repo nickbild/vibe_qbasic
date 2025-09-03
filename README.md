@@ -4,6 +4,8 @@
 
 I've brought vibe coding to the Microsoft QBasic v1.1 IDE with LLM code completions.
 
+![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/logo.jpg)
+
 ## How It Works
 
 I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not reproducing any of it or providing a modified binary.
