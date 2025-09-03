@@ -10,7 +10,7 @@ Vibe coding has come to the Microsoft QBasic v1.1 IDE from 1991 with integrated 
 
 I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not able to distribute any of it or provide a modified binary.
 
-For coding assistance, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do. Next, they use a new option under the search menu that I added called `Vibe it!`. The code editor will then be updated to reflect the changes or additions suggested by the LLM.
+For coding assistance, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do. Next, they use a new option under the search menu that I added called `Vibe it!`. It causes the code editor to be updated to reflect the changes or additions suggested by an LLM.
 
 To make this work, I wrote a function to handle the new menu option. It is a bit of a kludge, but interfacing an early 90s IDE running on Windows 98 with a modern coding LLM is not exactly straightforward. When the `Vibe it!` option is triggered, it saves the active BAS file and then creates a flow control file. Then it pauses until that flow control file is deleted by a separate process that I will describe shortly. When resuming after the pause, the source code file is reloaded and the active window is refreshed.
 
