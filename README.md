@@ -16,7 +16,7 @@ Despite the complexity, it is pretty quick. Responses are generally returned in 
 
 ## Media
 
-**A prompt is entered inline with the source code:**
+**A prompt is entered inline with the source code, then the menu item is selected:**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo1.png)
 
 **The code is automatically updated to reflect the LLM's changes and additions:**
