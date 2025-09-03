@@ -26,7 +26,7 @@ Despite the complexity, it is pretty quick. Responses are generally returned in 
 **Step 2: The code is automatically updated to reflect the LLM's changes and additions.**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo2.png)
 
-**Step 3: It runs correctly.**
+**Step 3: Run it. Looks good!**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo3.png)
 
 ## About the Author
