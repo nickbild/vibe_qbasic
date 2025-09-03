@@ -8,7 +8,7 @@ I've brought vibe coding to the Microsoft QBasic v1.1 IDE with LLM code completi
 
 ## How It Works
 
-I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not reproducing any of it or providing a modified binary.
+I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not distributing any of it or providing a modified binary.
 
 First, the user writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do.
 
