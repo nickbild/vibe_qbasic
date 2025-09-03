@@ -20,13 +20,13 @@ Despite the complexity, it is pretty quick. Responses are generally returned in 
 
 ## Example
 
-**Step 1: A prompt is entered inline with the source code, then the menu item is selected:**
+**Step 1: A prompt is entered inline with the source code, then the menu item is selected.**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo1.png)
 
-**Step 2: The code is automatically updated to reflect the LLM's changes and additions:**
+**Step 2: The code is automatically updated to reflect the LLM's changes and additions.**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo2.png)
 
-**Step 3: It runs correctly:**
+**Step 3: It runs correctly.**
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/demo3.png)
 
 ## About the Author
