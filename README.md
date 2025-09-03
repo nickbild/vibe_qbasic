@@ -10,11 +10,9 @@ Vibe coding has come to the Microsoft QBasic v1.1 IDE from 1991 with integrated 
 
 I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not able to distribute any of it or provide a modified binary.
 
-For coding assistance, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do.
+For coding assistance, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do. Next, they use a new option under the search menu that I added called `Vibe it!`. The code editor will then be updated to reflect the changes or additions suggested by the LLM.
 
-I renamed one of the `Search` menu items to be `Vibe it!`. Then I rewrote the function that handles that menu option. It is a bit of a kludge, but interfacing an early 90s IDE running on Windows 98 with a modern coding LLM is not exactly straightforward.
-
-When `Vibe it!` is triggered, it saves the active BAS file and then creates a flow control file. Then it pauses until that flow control file is deleted by a separate process that I will describe shortly. When resuming after the pause, the source code file is reloaded and the active window is refreshed.
+To make this work, I wrote a function to handle the new menu option. It is a bit of a kludge, but interfacing an early 90s IDE running on Windows 98 with a modern coding LLM is not exactly straightforward. When the `Vibe it!` option is triggered, it saves the active BAS file and then creates a flow control file. Then it pauses until that flow control file is deleted by a separate process that I will describe shortly. When resuming after the pause, the source code file is reloaded and the active window is refreshed.
 
 A [Python script](https://github.com/nickbild/vibe_qbasic/blob/main/vibe.py) runs on a modern computer. It continually polls for the presence of the flow control file by accessing an FTP server that is running on the Windows 98 machine. Once the file appears, it moves on to download the source code file (also via FTP). Then the source code is turned into a prompt for a Gemini Flash 2.5 LLM, which is accessed via the official API. The response is written to a BAS file, which is then uploaded to the Windows 98 machine. After that, the flow control file is deleted and the IDE can take back over, reloading the source code with the updates.
 
