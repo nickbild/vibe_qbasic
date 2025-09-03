@@ -10,7 +10,7 @@ Vibe coding has come to the Microsoft QBasic v1.1 IDE from 1991 with integrated 
 
 I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license, so I am not able to distribute any of it or provide a modified binary.
 
-To use it, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do.
+For coding assistance, the user first writes their code, then inserts a marker (`VIBE`) to specify where the model should place its focus for code completion. This marker can optionally be followed by a description of exactly what the user wants the model to do.
 
 I renamed one of the `Search` menu items to be `Vibe it!`. Then I rewrote the function that handles that menu option. It is a bit of a kludge, but interfacing an early 90s IDE running on Windows 98 with a modern coding LLM is not exactly straightforward.
 
