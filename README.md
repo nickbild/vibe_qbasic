@@ -2,7 +2,7 @@
 
 *More details coming soon...*
 
-I've brought vibe coding to the Microsoft QBasic v1.1 IDE with LLM code completions.
+Vibe coding has come to the Microsoft QBasic v1.1 IDE with LLM code completions and generation.
 
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/logo.jpg)
 
