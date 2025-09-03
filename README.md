@@ -1,7 +1,5 @@
 # QBasic Vibe Coding
 
-*More details coming soon...*
-
 Vibe coding has come to the Microsoft QBasic v1.1 IDE from 1991 with integrated LLM code completions and code generation.
 
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/logo.jpg)
