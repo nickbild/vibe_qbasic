@@ -4,6 +4,9 @@ Vibe coding has come to the Microsoft QBasic v1.1 IDE from 1991 with integrated 
 
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/logo.jpg)
 
+**Check out the video on YouTube:**
+<a href="https://www.youtube.com/watch?v=K320jPXIrbM">![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/video_preview.jpg)</a>
+
 ## How It Works
 
 I modified the source code of the Microsoft QBasic v1.1 IDE from 1991. While the source code is easily accessible on the web, I'm not sure about the license it is under, so I am not able to distribute any of it or provide a modified binary.
