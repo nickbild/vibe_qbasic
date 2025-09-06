@@ -17,7 +17,7 @@ To make this work, I wrote a function to handle the new menu option. It is a bit
 
 A [Python script](https://github.com/nickbild/vibe_qbasic/blob/main/vibe.py) runs on a modern computer. It continually polls for the presence of the flow control file by accessing an FTP server that is running on the Windows 98 machine. Once the file appears, it moves on to download the source code file (also via FTP). Then the source code is turned into a prompt for a Gemini Flash 2.5 LLM, which is accessed via the official API. The response is written to a BAS file, which is then uploaded to the Windows 98 machine. After that, the flow control file is deleted and the IDE can take back over, reloading the source code with the updates.
 
-Despite the complexity, it is pretty quick. Responses are generally returned in about 2 seconds.
+Despite the complexity, it is pretty quick. Responses are generally returned in about 2 seconds (of course it also depends on the amount of time the model has to 'think').
 
 ![](https://raw.githubusercontent.com/nickbild/vibe_qbasic/refs/heads/main/media/qbasic.jpg)
 
